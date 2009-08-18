@@ -1,0 +1,18 @@
+#summary How to install .CAB file
+#labels Phase-Deploy,Featured
+
+= Install .CAB file to your device =
+CAB file is the standard installer package (i.e. setup file) for Windows Mobile systems. There are many ways to install CAB file into your device. The following are some examples:
+
+=== Install from Internet ===
+If your device can access the Internet:
+# Open Internet Explorer
+# Type the URL (location) of the CAB file on the net, and hit *Go*
+{{{ http://hoxmobile.googlecode.com/files/HoxMobile.CAB }}}
+# When the download is done, Windows Mobile promts you for instruction to install the CAB file.
+
+=== Using Active Sync ===
+# Connect your device to your computer via Active Sync
+# Transfer CAB file to your device
+# On your device, use File Explorer to navigate to your cab file.
+# Open the CAB file, then following the instruction
