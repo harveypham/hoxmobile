@@ -1,0 +1,17 @@
+#summary Tracking of releases.
+#labels Featured
+
+= Introduction =
+
+This page document all releases.
+
+
+= Details =
+
+===08/17/2009 Alpha 1===
+A first stable release with basic features:
+  * User can play with AI (based on XQWLight AI from HoxChess)
+  * Can start new game via Left button
+Known issues and limitation:
+  * Can only play on a touch screen system
+  * System may appears to hang occasionally because AI takes long time to think.
