@@ -58,9 +58,7 @@ namespace HoxMobile
             if (m_playerVsMachine)
             {
                 m_xqwLight = new HoxMobile.AI.XQWLight();
-                m_xqwLight.init_engine(level);
-                m_xqwLight.set_search_time(10);
-
+                SetXqlLevel(level);
                 m_xqwLight.init_game(null, 'w');
             }
 
@@ -184,10 +182,7 @@ namespace HoxMobile
             {
                 if (m_xqwLight != null)
                     m_xqwLight = new HoxMobile.AI.XQWLight();
-                //m_xqwLight.init_engine(3);
-                //m_xqwLight.set_search_time(10);
-                m_xqwLight.init_engine(level);
-                m_xqwLight.set_search_time(10);
+                SetXqlLevel(level);
                 m_xqwLight.init_game(null, 'w');
             }
             else
@@ -197,6 +192,13 @@ namespace HoxMobile
 
             ClearBoard();
             SetupPiecesForNewGame();
+        }
+
+        static readonly int[] searchTimePerLevel = new int[] { 5, 10, 15, 20, 30 };
+        private void SetXqlLevel(int level)
+        {
+            m_xqwLight.init_engine(level);
+            m_xqwLight.set_search_time(searchTimePerLevel[level]);
         }
 
         public List<Piece> ActivePieces
