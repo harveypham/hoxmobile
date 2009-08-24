@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XQWLight", "XQWLight\XQWLight.csproj", "{8C60FE3F-BA43-48EF-BC99-CCB4185CAADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoxMobile", "HoxMobile\HoxMobile.csproj", "{DE15F263-1EEE-4EAF-A8C2-90925A4A0183}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "HoxSetup", "HoxSetup\HoxSetup.vddproj", "{E1150771-BE23-43E8-93D7-8785ECB85040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forms", "Forms\Forms.csproj", "{A4A817ED-8F39-4AF7-A627-742C425DA7ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C60FE3F-BA43-48EF-BC99-CCB4185CAADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C60FE3F-BA43-48EF-BC99-CCB4185CAADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C60FE3F-BA43-48EF-BC99-CCB4185CAADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C60FE3F-BA43-48EF-BC99-CCB4185CAADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE15F263-1EEE-4EAF-A8C2-90925A4A0183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE15F263-1EEE-4EAF-A8C2-90925A4A0183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE15F263-1EEE-4EAF-A8C2-90925A4A0183}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DE15F263-1EEE-4EAF-A8C2-90925A4A0183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE15F263-1EEE-4EAF-A8C2-90925A4A0183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE15F263-1EEE-4EAF-A8C2-90925A4A0183}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E1150771-BE23-43E8-93D7-8785ECB85040}.Debug|Any CPU.ActiveCfg = Debug
+		{E1150771-BE23-43E8-93D7-8785ECB85040}.Debug|Any CPU.Build.0 = Debug
+		{E1150771-BE23-43E8-93D7-8785ECB85040}.Release|Any CPU.ActiveCfg = Release
+		{E1150771-BE23-43E8-93D7-8785ECB85040}.Release|Any CPU.Build.0 = Release
+		{A4A817ED-8F39-4AF7-A627-742C425DA7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A817ED-8F39-4AF7-A627-742C425DA7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A817ED-8F39-4AF7-A627-742C425DA7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A817ED-8F39-4AF7-A627-742C425DA7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
