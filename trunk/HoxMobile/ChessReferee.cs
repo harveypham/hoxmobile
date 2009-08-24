@@ -46,7 +46,7 @@ namespace HoxMobile
         // AI
         HoxMobile.AI.XQWLight m_xqwLight;
 
-        public ChessReferee(PieceColor playerColor, bool playerVsMachine )
+        public ChessReferee(PieceColor playerColor, bool playerVsMachine, int level )
         {
             m_color = playerColor;
             m_playerVsMachine = playerVsMachine;
@@ -58,7 +58,7 @@ namespace HoxMobile
             if (m_playerVsMachine)
             {
                 m_xqwLight = new HoxMobile.AI.XQWLight();
-                m_xqwLight.init_engine(3);
+                m_xqwLight.init_engine(level);
                 m_xqwLight.set_search_time(10);
 
                 m_xqwLight.init_game(null, 'w');
@@ -171,7 +171,7 @@ namespace HoxMobile
             }
         }
 
-        public void StartNewGame(PieceColor playerColor, bool playerVsMachine)
+        public void StartNewGame(PieceColor playerColor, bool playerVsMachine, int level)
         {
             m_color = playerColor;
             m_playerVsMachine = playerVsMachine;
@@ -186,8 +186,8 @@ namespace HoxMobile
                     m_xqwLight = new HoxMobile.AI.XQWLight();
                 //m_xqwLight.init_engine(3);
                 //m_xqwLight.set_search_time(10);
-                m_xqwLight.init_engine(1);
-                m_xqwLight.set_search_time(5);
+                m_xqwLight.init_engine(level);
+                m_xqwLight.set_search_time(10);
                 m_xqwLight.init_game(null, 'w');
             }
             else

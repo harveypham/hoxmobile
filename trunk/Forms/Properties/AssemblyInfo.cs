@@ -1,6 +1,4 @@
-﻿// XQWLight is an AI for Chinese Chess. The algorithm was originally
-// developed by Huang Chen (www.elephantbase.net). This C# port is
-// based on the source code from HoxChess (http://code.google.com/p/hoxchess)
+﻿// HoxMobile.Forms contains GUI classes for Windows Mobile
 //
 // Copyright (C) 2009 Harvey Pham (harveypham@playxiangqi.com)
 //
@@ -24,11 +22,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("XQWLight")]
-[assembly: AssemblyDescription("AI for HoxMobile")]
+[assembly: AssemblyTitle("Forms")]
+[assembly: AssemblyDescription("Controls and GUI related classes")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("www.playxiangqi.com")]
-[assembly: AssemblyProduct("XQWLight")]
+[assembly: AssemblyProduct("Forms")]
 [assembly: AssemblyCopyright("Copyright © Harvey Pham 2009")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -39,7 +37,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f9f8b42e-b296-46db-9cbd-d9c70eca5bf0")]
+[assembly: Guid("d76936b3-387f-4375-84ac-460472e7f81f")]
 
 // Version information for an assembly consists of the following four values:
 //

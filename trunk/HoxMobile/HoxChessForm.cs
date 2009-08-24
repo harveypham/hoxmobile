@@ -35,7 +35,7 @@ namespace HoxMobile
             //mBoardSize = new BoardSize(false);
             linePen = new Pen(mSettings.mForeground, mSettings.mLineWeight);
             mLastMove = new Position(Position.OffBoard);
-            mReferee = new ChessReferee( PieceColor.Red, true);
+            mReferee = new ChessReferee( PieceColor.Red, m_gameOptions.Mode == GameOptionsDialog.GameMode.Machine, m_gameOptions.Level);
         }
 
         protected override void OnMouseUp(MouseEventArgs e)
@@ -358,14 +358,14 @@ namespace HoxMobile
         private void miStart_Click(object sender, EventArgs e)
         {
             // Start of the game, there is no need to reset
-            if (!mLastMove.IsValid())
-                return;
+            //if (!mLastMove.IsValid())
+            //    return;
 
             if (mGameOver || mReferee.PlayerTurn())
             {
                 mGameOver = false;
                 mLastMove.Set(Position.OffBoard);
-                mReferee.StartNewGame(PieceColor.Red, true);
+                mReferee.StartNewGame(PieceColor.Red, m_gameOptions.Mode == GameOptionsDialog.GameMode.Machine, m_gameOptions.Level);
                 Invalidate();
                 Update();
             }
@@ -374,6 +374,20 @@ namespace HoxMobile
         private void miQuit_Click(object sender, EventArgs e)
         {
             base.Close();
+        }
+
+        private GameOptionsDialog.GameOptions m_gameOptions = new GameOptionsDialog.GameOptions();
+
+        private void miGameOptions_Click(object sender, EventArgs e)
+        {
+            GameOptionsDialog dialog = new GameOptionsDialog();
+            dialog.Options.Set(m_gameOptions);
+            DialogResult result = dialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                //if ( dialog.Options.Mode == GameOptionsDialog.GameMode.Machine && 
+                m_gameOptions.Set(dialog.Options);
+            }
         }
     }
 

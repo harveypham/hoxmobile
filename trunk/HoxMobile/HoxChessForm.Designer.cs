@@ -25,7 +25,6 @@ namespace HoxMobile
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -48,20 +47,33 @@ namespace HoxMobile
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu1 = new System.Windows.Forms.MainMenu();
+            this.mainMenu = new System.Windows.Forms.MainMenu();
             this.miStart = new System.Windows.Forms.MenuItem();
+            this.miMain = new System.Windows.Forms.MenuItem();
+            this.miGameOptions = new System.Windows.Forms.MenuItem();
             this.miQuit = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
-            // mainMenu1
+            // mainMenu
             // 
-            this.mainMenu1.MenuItems.Add(this.miStart);
-            this.mainMenu1.MenuItems.Add(this.miQuit);
+            this.mainMenu.MenuItems.Add(this.miStart);
+            this.mainMenu.MenuItems.Add(this.miMain);
             // 
             // miStart
             // 
             this.miStart.Text = "Start";
             this.miStart.Click += new System.EventHandler(this.miStart_Click);
+            // 
+            // miMain
+            // 
+            this.miMain.MenuItems.Add(this.miGameOptions);
+            this.miMain.MenuItems.Add(this.miQuit);
+            this.miMain.Text = "Menu";
+            // 
+            // miGameOptions
+            // 
+            this.miGameOptions.Text = "Game Options...";
+            this.miGameOptions.Click += new System.EventHandler(this.miGameOptions_Click);
             // 
             // miQuit
             // 
@@ -74,7 +86,7 @@ namespace HoxMobile
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(176, 180);
-            this.Menu = this.mainMenu1;
+            this.Menu = this.mainMenu;
             this.Name = "HoxChessForm";
             this.Text = "HoxMobile";
             this.ResumeLayout(false);
@@ -102,8 +114,12 @@ namespace HoxMobile
         private bool mGameOver = false;
         private ChessReferee mReferee;
         private PieceImage mImages = new PieceImage();
+
         private System.Windows.Forms.MenuItem miStart;
+        private System.Windows.Forms.MenuItem miMain;
         private System.Windows.Forms.MenuItem miQuit;
+        private System.Windows.Forms.MenuItem miGameOptions;
+        private System.Windows.Forms.MainMenu mainMenu;
     }
 
 }
