@@ -10,7 +10,7 @@ This page document all releases.
 
 ===08/23/2009 Alpha 2===
 Support 2 modes:
-  * Play with self: user play with himself (or 2 players take turn to play on one machine)
+  * Play with self: user plays with himself (or 2 players take turn to play on one machine)
   * Play with AI: play with machine. User can select 5 different level of difficulty. Level 3 (default) is similar to previous release.
 Known issues and limitation:
   * Can only play on a system with touch screen.
