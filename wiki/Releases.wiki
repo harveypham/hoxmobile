@@ -13,7 +13,8 @@ Minor improvements:
   * AI uses open move book which slightly improve the search time. (Open book was copied from XQL Light engine at www.elephantbase.net.
   * Out-of-bound indexing when selecting level 5.
   * Releasing Game Options Dialog upon return to main page.
-Known issues and limitation: see previous version.  
+Known issues and limitation:
+  * Ssee previous version.  
 
 ===08/23/2009 Alpha 2===
 Support 2 modes:
