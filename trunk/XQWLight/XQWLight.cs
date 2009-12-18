@@ -90,8 +90,8 @@ namespace HoxMobile.AI
         public void init_game(sbyte[,] board, char side /* = 'w' */ )
         {
             rand = new Random();
-           InitZobrist();
-            //LoadBook();
+            InitZobrist();
+            LoadBook();
             Startup(board);
 
             if (side == 'b')
@@ -134,16 +134,26 @@ namespace HoxMobile.AI
 
         private void LoadBook()
         {
-            using (FileStream fileStream = File.Open("book.dat", FileMode.Open))
-            using (BinaryReader reader = new BinaryReader(fileStream))
+            try
             {
-                m_search.nBookSize = Convert.ToInt32(reader.BaseStream.Length) / 8;
-                for (uint book = 0; book < m_search.nBookSize; book++)
+                using (FileStream fileStream = File.Open("book.dat", FileMode.Open))
+                using (BinaryReader reader = new BinaryReader(fileStream))
                 {
-                    m_search.BookTable[book].dwLock = reader.ReadUInt32();
-                    m_search.BookTable[book].wmv = reader.ReadUInt16();
-                    m_search.BookTable[book].wvl = reader.ReadUInt16();
+                    m_search.nBookSize = Convert.ToInt32(reader.BaseStream.Length) / 8;
+                    if (m_search.nBookSize > BOOK_SIZE)
+                        m_search.nBookSize = BOOK_SIZE;
+                    m_search.BookTable = new BookItem[m_search.nBookSize];
+                    for (uint book = 0; book < m_search.nBookSize; book++)
+                    {
+                        m_search.BookTable[book] = new BookItem();
+                        m_search.BookTable[book].dwLock = reader.ReadUInt32();
+                        m_search.BookTable[book].wmv = reader.ReadUInt16();
+                        m_search.BookTable[book].wvl = reader.ReadUInt16();
+                    }
                 }
+            }
+            catch (Exception)
+            {
             }
         }
 
@@ -228,6 +238,12 @@ namespace HoxMobile.AI
 
         int SearchBook()
         {
+            // 1. 如果没有开局库，则立即返回
+            if ( m_search.BookTable == null || m_search.nBookSize == 0)
+            {
+                return 0;
+            }
+
             int i, vl, nBookMoves, mv;
             int[] mvs = new int[MAX_GEN_MOVES];
             InitializeIntArray(mvs);
@@ -239,11 +255,6 @@ namespace HoxMobile.AI
             PositionStruct posMirror = new PositionStruct();
             // 搜索开局库的过程有以下几个步骤
 
-            // 1. 如果没有开局库，则立即返回
-            if (m_search.nBookSize == 0)
-            {
-                return 0;
-            }
 
             // 2. 搜索当前局面
             bMirror = false;
@@ -1142,7 +1153,7 @@ namespace HoxMobile.AI
             public int[,] mvKillers = new int[LIMIT_DEPTH, 2]; // 杀手走法表
             public HashItem[] HashTable = new HashItem[HASH_SIZE]; // 置换表
             public int nBookSize = 0;                 // 开局库大小
-            public BookItem[] BookTable = new BookItem[BOOK_SIZE]; // 开局库
+            public BookItem[] BookTable = null; // = new BookItem[BOOK_SIZE]; // 开局库
 
             public Search()
             {
@@ -1157,10 +1168,10 @@ namespace HoxMobile.AI
                     HashTable[hashItem] = new HashItem();
                 }
 
-                for (int bookItem = 0; bookItem < BookTable.Length; bookItem++)
-                {
-                    BookTable[bookItem] = new BookItem();
-                }
+                //for (int bookItem = 0; bookItem < BookTable.Length; bookItem++)
+                //{
+                //    BookTable[bookItem] = new BookItem();
+                //}
             }
 
             public int BinarySearch(BookItem item)
