@@ -380,13 +380,15 @@ namespace HoxMobile
 
         private void miGameOptions_Click(object sender, EventArgs e)
         {
-            GameOptionsDialog dialog = new GameOptionsDialog();
-            dialog.Options.Set(m_gameOptions);
-            DialogResult result = dialog.ShowDialog();
-            if (result == DialogResult.OK)
+            using (GameOptionsDialog dialog = new GameOptionsDialog())
             {
-                //if ( dialog.Options.Mode == GameOptionsDialog.GameMode.Machine && 
-                m_gameOptions.Set(dialog.Options);
+                dialog.Options.Set(m_gameOptions);
+                DialogResult result = dialog.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    //if ( dialog.Options.Mode == GameOptionsDialog.GameMode.Machine && 
+                    m_gameOptions.Set(dialog.Options);
+                }
             }
         }
     }

@@ -194,11 +194,11 @@ namespace HoxMobile
             SetupPiecesForNewGame();
         }
 
-        static readonly int[] searchTimePerLevel = new int[] { 5, 10, 15, 20, 30 };
+        static readonly int[] searchTimePerLevel = new int[] { 5, 10, 20, 30, 50 };
         private void SetXqlLevel(int level)
         {
             m_xqwLight.init_engine(level);
-            m_xqwLight.set_search_time(searchTimePerLevel[level]);
+            m_xqwLight.set_search_time(searchTimePerLevel[level-1]);
         }
 
         public List<Piece> ActivePieces

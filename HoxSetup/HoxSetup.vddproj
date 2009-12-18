@@ -14,6 +14,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0D6BE1E222FE49E280DFD237BC3651C2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_150574B66C3A4DB185A7A6A247AF1272"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -21,7 +27,7 @@
         "Entry"
         {
         "MsmKey" = "8:_2EF435752957039246DD44DBEA88C4D0"
-        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
+        "OwnerKey" = "8:_3E6785AA370D600D7D40A70B01A50107"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -33,7 +39,25 @@
         "Entry"
         {
         "MsmKey" = "8:_2EF435752957039246DD44DBEA88C4D0"
+        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2EF435752957039246DD44DBEA88C4D0"
         "OwnerKey" = "8:_739DDFCA419D0E8CCAB5765B741DB0E1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_327B428F66EE5EB840540538B11A9424"
+        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3E6785AA370D600D7D40A70B01A50107"
+        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -69,13 +93,19 @@
         "Entry"
         {
         "MsmKey" = "8:_739DDFCA419D0E8CCAB5765B741DB0E1"
-        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
+        "OwnerKey" = "8:_3E6785AA370D600D7D40A70B01A50107"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_739DDFCA419D0E8CCAB5765B741DB0E1"
         "OwnerKey" = "8:_F6DE40B6888C4E819855BB23E1B3218B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_739DDFCA419D0E8CCAB5765B741DB0E1"
+        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -93,13 +123,19 @@
         "Entry"
         {
         "MsmKey" = "8:_90ADEDC42CDC31E3CE298231ABA04D11"
+        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_90ADEDC42CDC31E3CE298231ABA04D11"
         "OwnerKey" = "8:_739DDFCA419D0E8CCAB5765B741DB0E1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_90ADEDC42CDC31E3CE298231ABA04D11"
-        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
+        "OwnerKey" = "8:_3E6785AA370D600D7D40A70B01A50107"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -129,6 +165,18 @@
         "Entry"
         {
         "MsmKey" = "8:_974D22BB9B2093F392C90A12656A9407"
+        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_974D22BB9B2093F392C90A12656A9407"
+        "OwnerKey" = "8:_327B428F66EE5EB840540538B11A9424"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_974D22BB9B2093F392C90A12656A9407"
         "OwnerKey" = "8:_739DDFCA419D0E8CCAB5765B741DB0E1"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -141,13 +189,7 @@
         "Entry"
         {
         "MsmKey" = "8:_974D22BB9B2093F392C90A12656A9407"
-        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_974D22BB9B2093F392C90A12656A9407"
-        "OwnerKey" = "8:_DBA7372307A99953CD3B821301FBAA98"
+        "OwnerKey" = "8:_3E6785AA370D600D7D40A70B01A50107"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -166,12 +208,6 @@
         {
         "MsmKey" = "8:_974D22BB9B2093F392C90A12656A9407"
         "OwnerKey" = "8:_E0A488765D833562DDE6B590C7832613"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_DBA7372307A99953CD3B821301FBAA98"
-        "OwnerKey" = "8:_491495280BDE449D8CBDC075FE271428"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -230,6 +266,24 @@
     {
         "File"
         {
+            "{BA458234-9B71-4F46-8107-E91156377184}:_0D6BE1E222FE49E280DFD237BC3651C2"
+            {
+            "SourcePath" = "8:..\\XQWLight\\BOOK.DAT"
+            "TargetName" = "8:BOOK.DAT"
+            "Tag" = "8:"
+            "Folder" = "8:_6A61A4DEF10840A68BF843A70E545F19"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{E4F2F62A-3940-4BF5-A031-F7FA98CAAFFA}:_2EF435752957039246DD44DBEA88C4D0"
             {
             "AssemblyIsInGAC" = "11:FALSE"
@@ -243,6 +297,62 @@
                     }
                 }
             "SourcePath" = "8:System.Drawing.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_65A57F7A476147D2B69FDAC605BBB4C1"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{E4F2F62A-3940-4BF5-A031-F7FA98CAAFFA}:_327B428F66EE5EB840540538B11A9424"
+            {
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:XQWLight, Version=1.0.0.0, Culture=neutral"
+                "ScatterAssemblies"
+                {
+                    "_327B428F66EE5EB840540538B11A9424"
+                    {
+                    "Name" = "8:XQWLight.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:XQWLight.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_65A57F7A476147D2B69FDAC605BBB4C1"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{E4F2F62A-3940-4BF5-A031-F7FA98CAAFFA}:_3E6785AA370D600D7D40A70B01A50107"
+            {
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:HoxMobile.Forms, Version=1.0.0.0, Culture=neutral"
+                "ScatterAssemblies"
+                {
+                    "_3E6785AA370D600D7D40A70B01A50107"
+                    {
+                    "Name" = "8:HoxMobile.Forms.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:HoxMobile.Forms.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_65A57F7A476147D2B69FDAC605BBB4C1"
@@ -355,34 +465,6 @@
                     }
                 }
             "SourcePath" = "8:mscorlib.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_65A57F7A476147D2B69FDAC605BBB4C1"
-            "Condition" = "8:"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "Register" = "3:0"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{E4F2F62A-3940-4BF5-A031-F7FA98CAAFFA}:_DBA7372307A99953CD3B821301FBAA98"
-            {
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:XQWLight, Version=1.0.3516.39289, Culture=neutral"
-                "ScatterAssemblies"
-                {
-                    "_DBA7372307A99953CD3B821301FBAA98"
-                    {
-                    "Name" = "8:XQWLight.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:XQWLight.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_65A57F7A476147D2B69FDAC605BBB4C1"
