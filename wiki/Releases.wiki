@@ -8,6 +8,12 @@ This page document all releases.
 
 = Details =
 
+===12/17/2009 Alpha 3===
+Minor improvements:
+  * AI uses open move book which slightly improve the search time. (Open book was copied from XQL Light engine at www.elephantbase.net.
+  * Out-of-bound indexing when selecting level 5.
+  * Releasing Game Options Dialog upon return to main page.
+
 ===08/23/2009 Alpha 2===
 Support 2 modes:
   * Play with self: user plays with himself (or 2 players take turn to play on one machine)
