@@ -10,11 +10,11 @@ This page document all releases.
 
 ===12/17/2009 Alpha 3===
 Minor improvements:
-  * AI uses open move book which slightly improve the search time. (Open book was copied from XQL Light engine at www.elephantbase.net.
+  * AI uses open move book which slightly improve the search time. (Open book was copied from XQL Light engine at www.elephantbase.net.)
   * Out-of-bound indexing when selecting level 5.
   * Releasing Game Options Dialog upon return to main page.
 Known issues and limitation:
-  * Ssee previous version.  
+  * See previous version.  
 
 ===08/23/2009 Alpha 2===
 Support 2 modes:
